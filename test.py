@@ -18,8 +18,18 @@ for x in range(10):
 
 
 
-
+print(lista)
 print("Átlaguk: ",(sum(lista)/len(lista)))
 print("Legkisebb: ",min(lista))
 print("Legnagyobb: ",max(lista))
 print("Van benne kilences?", kilencesvane)
+
+print("Harmadik feladat")
+neved=str(input("Kérek egy felhasználó nevet!: "))
+password=str(input("Kérek egy jelszavat, amivel befogsz jelentkezni! Ne felejtsd el!: "))
+valaszneved=""
+valaszpassword=""
+while valaszneved != neved and valaszpassword != password:
+    valaszneved = str(input("Add meg a neved!: "))
+    valaszpassword = str(input("Add meg a jelszód!: "))
+print("Bejelentkezve")
